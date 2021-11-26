@@ -1,6 +1,6 @@
 ﻿import reactComponent = require("components/reactComponent")
-import React = require("../../Scripts/react/development/react");
-import ReactDOM = require("../../Scripts/react/development/react-dom");
+import React = require("react");
+import ReactDOM = require("react-dom");
 
 class ReactViewModel {
     public displayName = 'React View';
@@ -11,6 +11,11 @@ class ReactViewModel {
                 { text: "I am prop value from Durandal top component" },
                 null
             ),
+            document.getElementById('reactContainer')
+        );
+    }
+    public detached() {
+        ReactDOM.unmountComponentAtNode(
             document.getElementById('reactContainer')
         );
     }

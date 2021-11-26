@@ -1,10 +1,10 @@
-﻿import React = require("../../Scripts/react/development/react");
+﻿import React = require("react");
 
-function reactComponent(props) {
-    const localA = "template value";
+function reactComponent (props) {
+    var [local, setLocal] = React.useState("local value");
     return (
         <div>
-            <h1>Hello, {localA}</h1>
+            <h1>Hello, {local}</h1>
             <p>Some value from props: {props.text}</p>
         </div>
     )

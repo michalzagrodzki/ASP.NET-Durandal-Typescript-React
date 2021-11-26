@@ -5,14 +5,14 @@ requirejs.config({
         'plugins': '../Scripts/durandal/plugins',
         'transitions': '../Scripts/durandal/transitions',
         'react': '../Scripts/react/development/react',
-        'react-dom': '../Scripts/react/development/react-dom'
+        'react-dom': '../Scripts/react-dom/development/react-dom'
     },
     shim: {
         'react': {
-            exports: 'react'
+            exports: 'React'
         },
         'react-dom': {
-            exports: 'react-dom'
+            exports: 'React-dom'
         }
     }
 });
@@ -30,7 +30,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function (sy
     app.start().then(function () {
         //Replace 'viewmodels' in the moduleId with 'views' to locate the view.
         //Look for partial views in a 'views' folder in the root.
-        viewLocator.useConvention();
+        viewLocator.useConvention('viewmodels', './../../App/views');
         //Show the app by setting the root view model for our application with a transition.
         app.setRoot('viewmodels/shell', 'entrance');
     });

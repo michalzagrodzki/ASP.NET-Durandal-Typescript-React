@@ -11,8 +11,14 @@
     "skipLibCheck": true,
     "allowJs": true,
     "allowUnreachableCode": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "react": [ "scripts/react/development/react.js" ],
+      "react-dom": [ "scripts/react-dom/development/react-dom.js" ]
+    }
   },
+  "compileOnSave": true,
   "exclude": [
     "node_modules",
     "wwwroot"
