@@ -190,14 +190,22 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dist\app\views\flickr.html" />
-    <Content Include="dist\app\views\reactvm.html" />
-    <Content Include="dist\app\views\shell.html" />
-    <Content Include="dist\app\views\welcome.html" />
+    <Content Include="App\views\flickr.html" />
+    <Content Include="App\views\reactvm.html" />
+    <Content Include="App\views\shell.html" />
+    <Content Include="App\views\welcome.html" />
+    <Content Include="dist\App\views\flickr.html" />
+    <Content Include="dist\App\views\reactvm.html" />
+    <Content Include="dist\App\views\shell.html" />
+    <Content Include="dist\App\views\welcome.html" />
     <Content Include="Scripts\react-dom\development\react-dom.js" />
     <Content Include="Scripts\react\development\react.js" />
     <Content Include="Scripts\react\production\react-dom.js" />
     <Content Include="Scripts\react\production\react.js" />
+    <Content Include="Templates\flickr.html" />
+    <Content Include="Templates\reactvm.html" />
+    <Content Include="Templates\shell.html" />
+    <Content Include="Templates\welcome.html" />
     <Content Include="tsconfig.json" />
     <TypeScriptCompile Include="App\components\reactComponent.tsx" />
     <Content Include="App\main.js" />
@@ -206,10 +214,6 @@
     <Content Include="Views\Web.config" />
     <TypeScriptCompile Include="App\viewmodels\reactvm.ts" />
     <TypeScriptCompile Include="App\viewmodels\welcome.ts" />
-    <Content Include="App\views\flickr.html" />
-    <Content Include="App\views\reactvm.html" />
-    <Content Include="App\views\shell.html" />
-    <Content Include="App\views\welcome.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
