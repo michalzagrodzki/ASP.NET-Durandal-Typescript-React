@@ -1,7 +1,37 @@
 # Build results
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+[Bb]in
+[Oo]bj
+[Tt]est[Rr]esults
+*.suo
+*.user
+*.[Cc]ache
+*[Rr]esharper*
+packages
+NuGet.exe
+_[Ss]cripts
+*.exe
+*.dll
+*.nupkg
+*.ncrunchsolution
+*.dot[Cc]over
 
 # VS files
 .vs/
+
+# compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
